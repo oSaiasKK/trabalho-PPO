@@ -1,0 +1,48 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --color: whitesmoke;
+    background-color: #000;
+    display: flex;
+}
+
+div#musicas {
+    min-width: fit-content;
+    max-height: fit-content;
+    padding: 1%;
+    padding-bottom: 3%;
+    border: 2px solid var(--color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+main {
+    border: 2px solid var(--color);
+    padding: 5%;
+    margin: 5px;
+    width: 99%;
+    height: 99%;
+}
+
+main div#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color);
+    margin: auto;
+    margin-bottom: 10%;
+    width: 40vh;
+    height: 60vh;
+}
+
+main div#content img {
+    width: 30vh;
+    height: 30vh;
+    border: 2px solid var(--color);
+    margin: 5%;
+}
