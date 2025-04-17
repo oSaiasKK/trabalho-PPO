@@ -1,0 +1,95 @@
+body {
+    --color1: whitesmoke;
+    --color2: gray;
+
+    margin: 0;
+    padding: 2vh;
+    background-color: #000;
+    color: var(--color1);
+    font-family: 'Courier New', monospace;
+}
+
+main {
+    border: .7vh ridge var(--color1);
+    height: 70vh;
+    margin: auto;
+    display: flex;
+}
+
+main div {
+    text-align: center;
+    margin: auto;
+    border: .7vh ridge var(--color2);
+    padding: 1vh;
+    max-width: 40vw;
+}
+
+main div h1 {
+    font-size: 4vh;
+}
+
+main div p {
+    font-size: 3vh;
+}
+
+footer {
+    display: flex;
+} 
+
+footer a {
+    width: 27vw;
+    border: .7vh ridge var(--color2);
+    margin: auto;
+    margin-top: 5vh;
+    text-align: center;
+    height: 18vh;
+    transition: .07s ;
+    transform-origin: bottom;
+    background-color: #000;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    color: var(--color1);
+}
+
+.treinoB {
+    transition: 1s;
+}
+
+.treinoC {
+    transition: 2s;
+}
+
+
+footer a:hover {
+    transform: scaleY(1.2);
+}
+
+a.treinoB:hover {
+    border: .7vh ridge #4A3535;
+    text-decoration-color: #f7dada;
+}
+a.treinoB:hover p {
+    border: .7vh ridge #f7dada;
+    color: #f7dada;
+}
+
+
+a.treinoC:hover {
+    border: .7vh ridge #616161;
+    text-decoration-color: #D32F2F;
+}
+a.treinoC:hover p {
+    border: .7vh ridge #D32F2F;
+    color: #D32F2F;
+}
+
+footer a p {
+    min-width: 15vw;
+    width: fit-content;
+    border: .7vh ridge var(--color1);
+    margin: auto;
+    margin-top: -4vh;
+    background-color: #000;
+    font-size: 4vh;
+    padding: 1vh;
+}
