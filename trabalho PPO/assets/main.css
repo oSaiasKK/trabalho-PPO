@@ -51,15 +51,6 @@ footer a {
     color: var(--color1);
 }
 
-.treinoB {
-    transition: 1s;
-}
-
-.treinoC {
-    transition: 2s;
-}
-
-
 footer a:hover {
     transform: scaleY(1.2);
 }
