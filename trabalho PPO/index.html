@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Treine+</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/main.css'>
+    <script src='assets/main.js'></script>
+</head>
+<body>
+
+    <main>
+    <div id="login">
+        <p><--Área de cadastro--></p>
+
+        <input id="novoUsuario" placeholder="Novo usuário">
+        <input id="novaSenha" placeholder="Nova senha">
+        <button onclick="cadastrar()">Cadastrar</button>
+
+        
+        <p><--Área de login--></p>
+        <input id="usuario" placeholder="Usuário">
+        <input id="senha" placeholder="Senha">
+        <button onclick="login()">Entrar</button>
+    </div>
+
+        <div>
+            <p id="mensagem">Por favor realize o seu Login.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="treinos treinoA" onclick="mostrarTreinoA()">
+            <p>Treinos Fáceis</p>
+        </div>
+        <div class="treinos treinoB" onclick="mostrarTreinoB()">
+            <p>Treinos Normais</p>
+        </div>
+        <div class="treinos treinoC" onclick="mostrarTreinoC()">
+            <p>Treinos Complexos</p>
+        </div>
+    </footer>
+
+    <!--TREINO A-->
+    <div id="treinoA">
+        <h1>Treinos Fáceis</h1>
+
+        <h2>Aquecimento e Mobilidade (5-7 min)</h2>
+        <div class="content">
+            <div>
+                <p>Marcha no lugar (eleve os joelhos) - 1 min</p>
+                <p class="text">Simule uma caminhada no mesmo lugar, levantando os joelhos até a altura do quadril. Ativa a circulação e aquece o corpo.</p>
+            </div>
+            <div>
+                <p>Rotação de ombros (frente e trás) - 30 seg cada</p>
+                <p class="text">Gire os ombros em círculos amplos para frente e depois para trás. Solta a musculatura dos ombros e melhora a mobilidade.</p>
+            </div>
+            <div>
+                <p>Rotação de quadril - 30 seg por lado</p>
+                <p class="text">Com as mãos na cintura, gire o quadril em círculos lentos para cada lado. Ajuda a soltar a lombar e os quadris.</p>
+            </div>
+            <div>
+                <p>Gato e camelo (ou gato-vaca) - 8 repetições</p>
+                <p class="text">Em quatro apoios, alterne entre curvar as costas para cima (gato) e para baixo (camelo). Mobiliza a coluna e alivia tensões.</p>
+            </div>
+            <div>
+                <p>Balanço de pernas (frontal) - 30 seg por perna</p>
+                <p class="text">Em pé, balance uma perna para frente e para trás, mantendo o controle. Trabalha o quadril, equilíbrio e mobilidade.</p>
+            </div>
+            <div>
+                <p>Alongamento dinâmico de costas (torso twist) - 30 seg por lado</p>
+                <p class="text">Em pé, com os braços abertos, gire o tronco de um lado para o outro de forma leve e contínua. Solta a região torácica.</p>
+            </div>
+        </div>
+
+        <h2>Calistenia Leve (10-12 min)</h2>
+        <div class="content">
+            <div>
+                <p>Agachamento - 15x</p>
+                <p class="text">Com os pés afastados na largura dos ombros, agache como se fosse sentar, mantendo o peito erguido. Trabalha pernas e glúteos.</p>
+            </div>
+            <div>
+                <p>Elevação de braços (frente e lateral) - 10x cada</p>
+                <p class="text">Levante os braços até a altura dos ombros, alternando elevações à frente e para o lado. Ativa ombros e postura.</p>
+            </div>
+            <div>
+                <p>Ponte de glúteos - 15x</p>
+                <p class="text">Deitado de barriga para cima, com os joelhos dobrados, eleve o quadril até formar uma linha reta. Fortalece glúteos e lombar.</p>
+            </div>
+            <div>
+                <p>Flexão de braço (com joelhos no chão) - 10x</p>
+                <p class="text">Com os joelhos apoiados, faça flexões mantendo o corpo reto. Trabalha peitoral, tríceps e core.</p>
+            </div>
+            <div>
+                <p>Prancha - 20 a 30 seg</p>
+                <p class="text">Apoie os antebraços e os pés no chão, mantendo o corpo reto. Fortalece abdômen, lombar e postura.</p>
+            </div>
+            <div>
+                <p>Super-homem (exercício para as costas) - 15x</p>
+                <p class="text">Deitado de barriga para baixo, eleve braços e pernas ao mesmo tempo. Fortalece costas e glúteos.</p>
+            </div>
+        </div>
+
+        <h2>Alongamento Final (5 min)</h2>
+        <div class="content">
+            <div>
+                <p>Pescoço - 30 seg por lado</p>
+                <p class="text">Incline a cabeça para o lado (orelha em direção ao ombro) e segure. Alivia tensões no pescoço.</p>
+            </div>
+            <div>
+                <p>Ombros (braço cruzado) - 30 seg por lado</p>
+                <p class="text">Cruze um braço sobre o peito e pressione com o outro. Alongamento simples para os ombros.</p>
+            </div>
+            <div>
+                <p>Posição da criança - 1 min</p>
+                <p class="text">Sentado sobre os calcanhares, estique os braços à frente com a testa no chão. Relaxa a lombar e acalma o corpo.</p>
+            </div>
+            <div>
+                <p>Posterior da coxa (sentado) - 1 min por perna</p>
+                <p class="text">Sente-se com uma perna esticada e incline-se para frente. Alongamento para a parte de trás da coxa.</p>
+            </div>
+            <div>
+                <p>Quadríceps (segurando o pé com a mão) - 30 seg por perna</p>
+                <p class="text">Em pé, segure o pé atrás com a mão e puxe suavemente. Alonga a parte da frente da coxa.</p>
+            </div>
+            <div>
+                <p>Respiração profunda - 1 min</p>
+                <p class="text">Sente-se ou deite confortavelmente, respirando devagar pelo nariz e soltando pela boca. Ajuda a relaxar e regular o corpo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--TREINO B-->
+    <div id="treinoB">
+        <h1>Treinos Normais</h1>
+        
+        <h2>Aquecimento e Mobilidade (5-7 min)</h2>
+        <div class="content">
+            <div>
+                <p>Polichinelos - 1 min</p>
+                <p class="text">Movimente braços e pernas de forma ritmada. Ótimo para ativar a circulação e preparar o corpo.</p>
+            </div>
+            <div>
+                <p>Mobilidade de ombro com toalha - 30 seg</p>
+                <p class="text">Use uma toalha para guiar os braços por trás das costas. Melhora a amplitude dos ombros.</p>
+            </div>
+            <div>
+                <p>Círculos com perna estendida - 30 seg por perna</p>
+                <p class="text">Em pé, faça círculos lentos com uma perna estendida. Trabalha o equilíbrio e a mobilidade do quadril.</p>
+            </div>
+            <div>
+                <p>Mobilidade torácica em 4 apoios - 8x por lado</p>
+                <p class="text">Em quatro apoios, gire o tronco abrindo o braço para cima. Ajuda a desbloquear a parte superior da coluna.</p>
+            </div>
+            <div>
+                <p>Balanço de pernas (lateral e frontal) - 30 seg cada</p>
+                <p class="text">Balance as pernas para frente e para os lados. Solta o quadril e melhora a coordenação.</p>
+            </div>
+            <div>
+                <p>Posição do mundo (World's Greatest Stretch) - 30 seg por lado</p>
+                <p class="text">Com um joelho no chão e o outro à frente, apoie uma mão no solo e gire o tronco. Alonga várias partes do corpo ao mesmo tempo.</p>
+            </div>
+        </div>
+
+        <h2>Calistenia Intermediária (10-12 min)</h2>
+        <div class="content">
+            <div>
+                <p>Agachamento com salto - 15x</p>
+                <p class="text">Faça um agachamento tradicional e salte ao subir. Trabalha força e explosão nas pernas.</p>
+            </div>
+            <div>
+                <p>Flexão de braço completa - 10 a 15x</p>
+                <p class="text">Com o corpo reto, desça até quase tocar o chão. Fortalece peito, braços e abdômen.</p>
+            </div>
+            <div>
+                <p>Ponte de glúteos com uma perna - 10x por lado</p>
+                <p class="text">Igual à ponte comum, mas com uma perna elevada. Aumenta a dificuldade e o foco no glúteo.</p>
+            </div>
+            <div>
+                <p>Prancha com toques no ombro - 30 seg</p>
+                <p class="text">Na posição de prancha, toque alternadamente os ombros com as mãos. Melhora o controle do core e equilíbrio.</p>
+            </div>
+            <div>
+                <p>Afundo alternado - 10x por perna</p>
+                <p class="text">Dê um passo à frente, abaixe o corpo e volte. Fortalece pernas e melhora a estabilidade.</p>
+            </div>
+            <div>
+                <p>Hollow hold - 20 a 30 seg</p>
+                <p class="text">Deitado de costas, levante ombros e pernas sem encostar no chão. Fortalece intensamente o abdômen.</p>
+            </div>
+        </div>
+
+        <h2>Alongamento Final (5 min)</h2>
+        <div class="content">
+            <div>
+                <p>Pescoço - 30 seg por lado</p>
+                <p class="text">Incline a cabeça para o lado, segurando suavemente com a mão oposta. Alivia tensão na cervical.</p>
+            </div>
+            <div>
+                <p>Braço atrás das costas - 30 seg por lado</p>
+                <p class="text">Segure um braço atrás das costas com o outro. Abre o peito e solta os ombros.</p>
+            </div>
+            <div>
+                <p>Posição do pombo - 1 min por perna</p>
+                <p class="text">Com uma perna dobrada à frente e a outra esticada atrás, deite o tronco. Excelente para glúteos e quadril.</p>
+            </div>
+            <div>
+                <p>Alongamento posterior ativo - 1 min por perna</p>
+                <p class="text">Sente-se, estenda uma perna e segure o pé com a mão. Alonga os posteriores da coxa.</p>
+            </div>
+            <div>
+                <p>Quadríceps deitado - 30 seg por perna</p>
+                <p class="text">Deitado de lado, puxe o pé em direção ao glúteo. Mais estável e eficaz que em pé.</p>
+            </div>
+            <div>
+                <p>Respiração profunda - 1 min</p>
+                <p class="text">Respire fundo e lento, focando na calma. Ideal para finalizar o treino com relaxamento.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--TREINO C-->
+    <div id="treinoC">
+        <h1>Treinos Complexos</h1>
+    
+        <h2>Aquecimento e Mobilidade Ativa (5-7 min)</h2>
+        <div class="content">
+            <div>
+                <p>Burpees com salto alto - 1 min</p>
+                <p class="text">Agache, leve os pés para trás, retorne e finalize com salto o mais alto possível. Aumenta o ritmo cardíaco e aquece todo o corpo.</p>
+            </div>
+            <div>
+                <p>Estocada com elevação de joelho - 30 seg por lado</p>
+                <p class="text">Combine uma estocada para trás com uma elevação explosiva do joelho. Trabalha força, mobilidade e coordenação.</p>
+            </div>
+            <div>
+                <p>Agachamento com mobilidade de tornozelos - 30 seg</p>
+                <p class="text">Na posição de agachamento profundo, mova o peso de um lado para o outro. Aumenta a amplitude do movimento dos tornozelos e quadris.</p>
+            </div>
+            <div>
+                <p>Saltos laterais com agachamento - 30 seg</p>
+                <p class="text">Salte de um lado para o outro, agachando ao aterrissar. Desenvolve potência e equilíbrio.</p>
+            </div>
+            <div>
+                <p>Mobilidade dinâmica de ombros com bastão - 1 min</p>
+                <p class="text">Use um bastão ou toalha e movimente os braços em arco, por cima da cabeça. Trabalha mobilidade e controle.</p>
+            </div>
+            <div>
+                <p>Movimento do escorpião - 1 min</p>
+                <p class="text">De bruços, eleve uma perna e cruze-a por trás do corpo. Ótimo para a mobilidade da coluna e quadris.</p>
+            </div>
+        </div>
+    
+        <h2>Treino Calistênico Avançado (12-15 min)</h2>
+        <div class="content">
+            <div>
+                <p>Flexão arqueiro - 10x por lado</p>
+                <p class="text">Flexão unilateral com maior carga em um braço. Trabalha força e estabilidade.</p>
+            </div>
+            <div>
+                <p>Pistol squat (agachamento unilateral) - 8x por perna</p>
+                <p class="text">Agachamento com apenas uma perna, mantendo equilíbrio e controle. Requer força e mobilidade.</p>
+            </div>
+            <div>
+                <p>Prancha com toque alternado nos pés - 20x</p>
+                <p class="text">Na posição de prancha, toque o pé oposto com a mão, alternando. Trabalha o core e coordenação.</p>
+            </div>
+            <div>
+                <p>Flexão diamante com batida de ombro - 12x</p>
+                <p class="text">Flexão com mãos próximas formando um diamante, seguido de um toque alternado nos ombros. Foca no tríceps e estabilidade.</p>
+            </div>
+            <div>
+                <p>Burpee com flexão e salto largo - 10x</p>
+                <p class="text">Versão avançada com salto explosivo à frente e flexão no meio do movimento. Condicionamento total.</p>
+            </div>
+            <div>
+                <p>Alpinistas cruzados - 40x (20 por lado)</p>
+                <p class="text">Traga os joelhos cruzando em direção ao cotovelo oposto em velocidade. Fortalece o core e melhora o cardio.</p>
+            </div>
+        </div>
+    
+        <h2>Alongamento e Relaxamento Final (5 min)</h2>
+        <div class="content">
+            <div>
+                <p>Postura do pombo (yoga) - 1 min por perna</p>
+                <p class="text">Alonga intensamente os flexores de quadril e glúteos, ótimo para recuperação após treino intenso.</p>
+            </div>
+            <div>
+                <p>Alongamento da cadeia posterior na parede - 1 min</p>
+                <p class="text">Deite com as pernas encostadas na parede para alongar isquiotibiais e lombar.</p>
+            </div>
+            <div>
+                <p>Estiramento de tríceps e dorsais - 30 seg por braço</p>
+                <p class="text">Com um braço dobrado por trás da cabeça, puxe suavemente com o outro. Alonga a parte superior do tronco.</p>
+            </div>
+            <div>
+                <p>Alongamento de punho (inverso e normal) - 30 seg cada</p>
+                <p class="text">Com os braços estendidos, puxe os dedos para cima e para baixo. Relaxa punhos e antebraços.</p>
+            </div>
+            <div>
+                <p>Torção com perna cruzada - 30 seg por lado</p>
+                <p class="text">Sente-se com uma perna cruzada e gire o tronco na direção oposta. Solta a coluna e os glúteos.</p>
+            </div>
+            <div>
+                <p>Respiração profunda com braços elevados - 1 min</p>
+                <p class="text">Inspire com os braços para cima e expire abaixando-os. Relaxa corpo e mente.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
